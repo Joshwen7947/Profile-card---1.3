@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap');
+// font-family: 'Grechen Fuemen', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+// font-family: 'Roboto Condensed', sans-serif;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-image: url('/images/background.jpg');
+}
+
+.container {
+	margin-top: 250px;
+	.card {
+		margin: auto;
+		width: 50%;
+		height: 500px;
+		background-color: blanchedalmond;
+		border-radius: 15px;
+		box-shadow: 1px 1px 5px;
+		text-align: center;
+		display: flex;
+		flex-wrap: wrap;
+		.img {
+			padding: 25px;
+			width: 40%;
+			margin: 100px 0;
+			img {
+				border-radius: 50%;
+			}
+		}
+		.info {
+			width: 50%;
+			display: flex;
+			flex-direction: column;
+			padding: 50px 0;
+			.name {
+				font-size: 2.5rem;
+				font-family: 'Roboto Condensed', sans-serif;
+				padding: 25px 0;
+				text-decoration: underline;
+			}
+			.quote {
+				font-family: 'Grechen Fuemen', cursive;
+				padding: 25px 0;
+				font-size: 1.5rem;
+			}
+			.bio {
+				font-family: 'Roboto Condensed', sans-serif;
+				padding: 25px 0;
+				font-size: 1.2rem;
+			}
+		}
+	}
+	.socialmedia {
+		// display: flex;
+		// justify-content: space-around;
+		margin: auto;
+		transform: scale(2);
+		position: relative;
+		bottom: 15px;
+		.fab {
+			padding: 0 10px;
+		}
+		.fab:hover {
+			cursor: pointer;
+			opacity: 0.7;
+		}
+	}
+}
